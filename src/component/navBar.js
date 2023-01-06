@@ -8,44 +8,38 @@ const Nav = () => {
         {name:"works",link:"/"},
         {name:"contact",link:"/"},
     ]
-    const [open , setOpen]  = useState('false')
+    const [open , setOpen]  = useState(false)
   return (
     
-    <div className='md:flex md:justify-between py-6 bg-black text-white font-body tracking-wider font-bold block'>
-    <div className='flex justify-between px-5'>
-    <div className='md:text-4xl text-3xl md:mt-3 md:ml-20'>
+    <div className='shadow-xl w-full fixed  top-0 left-0'>
+    <div className="md:flex items-center justify-between bg-secondary py-4 md:px-10 px-7">
+    <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800  '>
+    <span className='text-4xl'>
+    
+    </span>
+    
     <span className='text-primary'>Uw</span>
-    <span>Djanati</span>
+    <span className='text-white' >Djanati</span>
     </div>
-    <div onClick={()=>setOpen(!open)} className=' text-white md:hidden text-4xl absolute right-8 top-6'>
-
-    <ion-icon name={open ? "close" : "menu"}></ion-icon>
-    
+  
+    <div onClick={()=>setOpen(!open)} 
+    className='text-white text-4xl absolute right-8 top-4 cursor-pointer md:hidden'>
+    <ion-icon name={open ? 'close':'menu'}></ion-icon>
     </div>
-    </div>
-    
-
-    <nav className='md:text-xl px-4 text-xl justify-between mx-2 md:mr-20'>
-    <ul className={`md:flex md:gap-6 uppercase py-4 absolute md:static  bg-black md:z-auto z-[-1]left-0 w-full md:w-auto transition-all duration-500 ${open ? 'top-20' : 'top-[-490px]'}`}>
-
-
-    {Links.map((link)=>(
-        <li className='my-7 md:my-0'>
-        <a href={link.link} className="hover:text-primary transition ease-out duration-300">{link.name}</a>
+    <ul className={`md:flex md:items-center md:pb-0 pb-12 uppercase absolute md:static bg-secondary md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20' :'top-[-490px]'}`  }>
+  {
+       Links.map((link)=>(
+        <li key={link.name} className='md:ml-8 text-xl  md:my-0 my-7'>
+        <a href={link.link} className="hover:text-brightRed duration-500 text-white">{link.name}</a>
         </li>
-    )
-        
 
-
-    )}
-   
+       ))}
+      
+      
     
-    
-   
     </ul>
-    </nav>
-
     
+    </div>
     
     </div>
     
