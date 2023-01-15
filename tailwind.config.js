@@ -44,7 +44,8 @@ module.exports = {
       rose: colors.rose,
       primary:"#f5d20b",
       secondary:"#00003b",
-      third: "#3232bd"
+      third: "#3232bd",
+      pageColor:"#00008B"
     }),
     columns: {
       auto: 'auto',

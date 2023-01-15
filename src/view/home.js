@@ -14,7 +14,7 @@ const Home = () => {
     
     
     
-    <div className='border-2 text-center pt-60'>
+    <div className=' text-center pt-60'>
     {myIntro.map((data)=>(
       <div className=''>
 <div className='pb-30'>
@@ -32,8 +32,11 @@ const Home = () => {
 
 
     ))}
-    
+    <div className='flex items-center justify-center mt-10 space-x-5'>
     <Button>Contact Me</Button>
+    <Button>My Resume</Button>
+    </div>
+   
     </div>
     
     </section>
