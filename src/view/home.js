@@ -4,7 +4,7 @@ import Button from '../component/buttonComponent'
 const Home = () => {
 
   const myIntro =[{
-    name:"Djanati UWASE",
+    name:"I'm Djanati UWASE",
     careerTitle:"FullStack Web Developer",
     body:"full stack web development as a specialty.if you are a business looking to recruit",
     body2:"or establish an online presence.Contact me here!"

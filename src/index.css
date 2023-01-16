@@ -5,3 +5,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+.heading2:before{
+    @apply content-none w-[120px] block h-[2px] bg-white absolute right-0 top-[500px] z-[-2]
+}
+}
