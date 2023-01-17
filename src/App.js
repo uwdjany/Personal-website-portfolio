@@ -7,13 +7,16 @@ import AboutPage from './view/aboutMe';
 function App() {
   return (
     <>
+    <div>
     <Nav/>
+    </div>
+  
 
     <div className=''>
     <Home/>
     </div>
     <div>
-    <AboutPage/>
+  <AboutPage/>
     
     </div>
     </>
