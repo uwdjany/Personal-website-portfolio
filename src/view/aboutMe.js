@@ -1,25 +1,43 @@
-import React from 'react'
-import img from "../assets/image/myImg.png"
-import photo from "../assets/image/image.jpeg"
+import React from "react";
+import Button from "../component/buttonComponent"
+
+import photo from "../assets/image/image.jpeg";
 const AboutPage = () => {
   return (
-    <div className='h-screen bg-pageColor'>
-    <div className=''>
+    <div className="h-screen bg-pageColor">
+    <div className="text-center text-3xl text-white font-semibold py-9 uppercase tracking-[2px] leading-tight">
+    <h2>About Me</h2>
+    
+    </div>
+   <div className=" max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-6xl bg-secondary md:max-w-2xl p-6  ">
+   <div className="md:flex">
+   <div className="md:shirnk-0">
+   <img src={photo} alt="" className="h-96 w-full object-cover md:h-full md:w-90 border-4 border-pageColor rounded-xl" />
    
-    <h2 className=' text-center md:text-5xl text-4xl font-bold py-5 text-white  after:bg-primary after:w-[60px] after:h-[7px] after:absolute after:left-[610px] after:top-[800px] after:z-[1]  before:bg-primary before:w-[60px] before:h-[7px] before:absolute before:right-[610px] before:top-[800px] before:z-[1]'>About Me</h2>
-    
-    </div>
-    
-    <div className='flex items-center justify-center border-2  '>
-    <div className='bg-secondary w-[1200px] h-[500px] '>
-    
+   </div>
+   <div className="p-8">
+   <div className="uppercase text-primary text-3xl mb-9 md:mx-[130px] font-semibold tracking-[2px]">
+   <h3>Short history</h3>
+   </div>
+   <div>
+   <p className="text-zinc-400 text-xl leading-tight">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+   cum pariatur nostrum quo inventore modi eius, tenetur aliquid
+   autem asperiores id voluptates, eum provident consequatur
+   suscipit vero. Laboriosam, sunt vel! Lorem ipsum dolor sit amet
+   consectetur adipisicing elit. Labore doloribus explicabo,
+   corrupti consequuntur aperiam est exercitationem fuga quos
+   ipsam, similique id possimus rerum pariatur vel aliquid nulla
+   beatae, soluta dolorem?
+ </p>
+   </div>
    
-    <img src={photo} alt="" className='object-cover w-[400px] h-[500px] mt-[100px] ' />
-    </div>
-    </div>
-    
-    </div>
-  )
-}
+   </div>
 
-export default AboutPage
+   </div>
+   </div>
+    </div>
+  );
+};
+
+export default AboutPage;
