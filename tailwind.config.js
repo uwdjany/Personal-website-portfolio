@@ -45,7 +45,8 @@ module.exports = {
       primary:"#f5d20b",
       secondary:"#00003b",
       third: "#3232bd",
-      pageColor:"#00008B"
+      pageColor:"#00008B",
+      btnColor:"#adff2f",
     }),
     columns: {
       auto: 'auto',
