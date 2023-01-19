@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Nav from './component/navBar';
 import Home from './view/home';
 import AboutPage from './view/aboutMe';
+import SkillsPage from './view/mySkills';
+
 
 function App() {
   return (
     <>
-    <div>
-    <Nav/>
-    </div>
-  
-
-    <div className=''>
-    <Home/>
-    </div>
-    <div>
-  <AboutPage/>
     
-    </div>
+     <Nav/>
+   
+<div>
+<Home/>
+</div>
+   
+  <div>
+  <AboutPage/>
+  </div>
+  <div>
+  <SkillsPage/>
+  </div>
+
+ 
+  
+    
     </>
   );
 }
