@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     
     <div className='shadow-lg shadow-blue-500/50 w-full fixed top-0 left-0 border-t-4 border-primary'>
-    <div className="md:flex items-center  justify-between bg-secondary py-4 md:px-[100px] sm:px-4 px-7">
+    <div className="md:flex items-center  justify-between bg-secondary py-4 md:px-[120px]  px-7">
     <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800  '>
     <span className='text-4xl'>
     <span className='text-primary'>Uw</span>
@@ -31,7 +31,7 @@ const Nav = () => {
   {
        Links.map((link)=>(
         <li key={link.name} className='md:ml-8 text-xl  md:my-0 my-7 hover:text-primary'>
-        <a href={link.link} className="hover:text-brightRed duration-500 text-white ">{link.name}</a>
+        <a href={link.link} className="hover:text-primary font-bold leading-tight duration-500 text-white ">{link.name}</a>
         </li>
 
        ))}

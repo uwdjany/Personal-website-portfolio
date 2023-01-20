@@ -38,10 +38,10 @@ const Home = () => {
  
     
     </div>
-    <div className="flex justify-center items-center space-x-3 uppercase font-semibold leading-tight mt-10">
-    <a href="" className="bg-white p-2 rounded-lg">visit my Github</a>
+    <div className="flex justify-center items-center space-x-3 uppercase font-bold leading-tight mt-10">
+    <a href="" className="bg-pageColor text-white border-2 px-4 border-primary p-2 rounded-lg hover:bg-secondary">contact me</a>
   
-    <a href="" className="bg-white p-2 rounded-lg">Download CV</a>
+    <a href="" className="bg-white border-4 border-pageColor p-2 px-5 rounded-lg hover:bg-pageColor hover:text-white">my resume</a>
     </div>
     </div>
     
