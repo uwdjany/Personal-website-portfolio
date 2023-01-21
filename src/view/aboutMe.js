@@ -11,7 +11,7 @@ const AboutPage = () => {
   }]
   return (
     <>
-    <div className="md:h-[800px] h-[1300px] bg-pageColor">
+    <div className="md:h-[680px] h-[1300px] bg-pageColor">
     <div className="text-center text-3xl text-white font-semibold py-9 uppercase tracking-[2px] leading-tight">
     <h2>About Me</h2>
     

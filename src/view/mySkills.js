@@ -10,25 +10,25 @@ const SkillsPage = () => {
     },
     {
       skillIcon: <ion-icon name="menu"></ion-icon>,
-      skillTitle: "UI/UX Design",
+      skillTitle: "Frontend",
       skillDesc:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi, dolor error eos expedit",
     },
     {
       skillIcon: <ion-icon name="menu"></ion-icon>,
-      skillTitle: "Front end",
+      skillTitle: "backend",
       skillDesc:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi, dolor error eos expedit",
     },
     {
       skillIcon: <ion-icon name="menu"></ion-icon>,
-      skillTitle: "Front end",
+      skillTitle: "soft skills",
       skillDesc:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi, dolor error eos expedit",
     },
     {
       skillIcon: <ion-icon name="menu"></ion-icon>,
-      skillTitle: "Front end",
+      skillTitle: "database",
       skillDesc:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi, dolor error eos expedit",
     },
@@ -41,16 +41,16 @@ const SkillsPage = () => {
 
   ];
   return (
-    <div className=" md:h-screen h-[1800px] bg-secondary ">
+    <div className=" lg:h-[1000px] h-[1800px] md:[400px] bg-secondary ">
       <div className=" text-center py-9">
         <h1 className="text-white text-3xl font-semibold">SKILLS PAGE</h1>
       </div>
-      <div className="grid grid-cols-3 gap-6 md:px-4 md:py-3 py-[30px]">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2 gap-6 md:px-[150px]  md:py-3 py-[30px] ">
 
       { 
         skillsData.map((data)=>(
 
-          <div className="shadow-lg shadow-blue-500/50 rounded-md md:w-1/4 md:h-1/2 md:mx-[100px] mx-5 ">
+          <div className="shadow-lg shadow-blue-500/50 rounded-md  md:mx-0    lg:px-0 mx-5 ">
         
           
           <div className="text-[100px] text-white text-center ">
