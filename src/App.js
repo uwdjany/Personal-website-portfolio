@@ -23,9 +23,7 @@ function App() {
   <div>
   <SkillsPage/>
   </div>
-  <div>
-  <ContactPage/>
-  </div>
+
 
  
   
